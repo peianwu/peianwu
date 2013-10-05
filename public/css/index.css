@@ -1,34 +1,4 @@
-/*flexbox styling*/
-
-.container {
-	display: -webkit-flex;
-	display: flex;
-}
-
-body {
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: stretch;
-	align-items: stretch;
-	margin: 0;
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-	background-color: #fff;
-
-}
-
-a {
-	color: #000;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #a05035;
-}
-
-.site-wrapper {
-	width: 760px;
-	background-color: #fff;
-}
+/*index only styles*/
 
 .content {
 	margin-left: 5px;

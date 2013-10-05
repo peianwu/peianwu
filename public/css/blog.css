@@ -1,45 +1,11 @@
-/*flexbox styling*/
+/*blog only styles*/
 
-.container {
-	display: -webkit-flex;
-	display: flex;
-}
-
-body {
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: stretch;
-	align-items: stretch;
-	margin: 0;
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-	background-color: #fff;
-
-}
-
-p {
-	margin: 8px 0;
-}
-
-a {
-	color: #000;
-	text-decoration: underline;
-}
-
-a:hover {
-	color: #a05035;
-}
-
-.site-wrapper {
-	width: 760px;
-	background-color: #fff;
-}
-
-.content {
-	margin-left: 5px;
-}
-
-.projects {
-	margin-left: 15px;
+.break {
+	-webkit-flex: 1;
+	flex: 1;
+	margin-top: 5px;
+	height: 1px;
+	background-color: #ffa500;
 }
 
 .entry {
@@ -59,6 +25,7 @@ a:hover {
 	text-align: right;
 }
 .return {text-align: right;}
+
 .return a {
 	font-size: 0.8em;
 	text-decoration: none;

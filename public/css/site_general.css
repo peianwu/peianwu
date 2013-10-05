@@ -1,0 +1,42 @@
+/*general layout for majority of site
+include general flexbox classes
+include generic styling elements*/
+
+/*flex box layouts*/
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+}
+
+
+/*generic elements*/
+
+body {
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+	margin: 0;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	background-color: #fff;
+
+}
+
+p {
+	margin: 8px 0;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #a05035;
+}
+
+.site-wrapper {
+	width: 760px;
+	background-color: #fff;
+}
