@@ -11,6 +11,7 @@ include generic styling elements*/
 
 
 /*generic elements*/
+* {margin: 0; padding: 0;}
 
 body {
 	-webkit-justify-content: center;
@@ -21,6 +22,10 @@ body {
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	background-color: #fff;
 
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 15px 0;
 }
 
 p {
@@ -39,4 +44,15 @@ a:hover {
 .site-wrapper {
 	width: 760px;
 	background-color: #fff;
+}
+
+.content {
+	margin-top: 15px;
+}
+
+.return {text-align: right;}
+
+.return a {
+	font-size: 0.8em;
+	text-decoration: none;
 }
