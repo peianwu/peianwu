@@ -9,7 +9,8 @@
 		var imgSrc = "../assets/img/day2/stickman.jpeg";
 		var imgStick = $("img.stickman");
 		var parentAdd = imgStick.closest(".here");
-		if ($(this) !== parentAdd) {
+		if ($(this)[0] !== parentAdd[0]) {
+			console.log("update");
 			imgStick.remove();
 			parentAdd.text("Go Here");
 
