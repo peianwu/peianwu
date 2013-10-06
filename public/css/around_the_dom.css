@@ -1,6 +1,6 @@
 .site-wrapper {
 	-webkit-justify-content: center;
-	align-justify-content: center;
+	justify-content: center;
 	-webkit-flex-direction: column;
 	flex-direction: column;
 }

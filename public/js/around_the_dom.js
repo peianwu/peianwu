@@ -9,13 +9,15 @@
 		var imgSrc = "../assets/img/day2/stickman.jpeg";
 		var imgStick = $("img.stickman");
 		var parentAdd = imgStick.closest(".here");
+		if ($(this) !== parentAdd) {
+			imgStick.remove();
+			parentAdd.text("Go Here");
 
-		imgStick.remove();
-		parentAdd.text("Go Here");
+			var direction = $(this).attr("id");
+			
+			var newStick = $(this).text("").append("<img>").find("img");
+			newStick.attr("src",imgSrc).addClass("stickman " + direction + "-rotate");
+		}
 
-		var direction = $(this).attr("id");
-		
-		var newStick = $(this).text("").append("<img>").find("img");
-		newStick.attr("src",imgSrc).addClass("stickman " + direction + "-rotate");
 	});
 })();
