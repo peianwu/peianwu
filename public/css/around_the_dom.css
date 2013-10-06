@@ -1,0 +1,69 @@
+.site-wrapper {
+	-webkit-justify-content: center;
+	align-justify-content: center;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.box {
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	/*-webkit-justify-content: center;
+	justify-content: center;*/
+	-webkit-align-items: center;
+	align-items: center;
+
+	width: 90%;
+	margin: 0 auto;
+}
+
+.row1, .row2, .row3 {
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.start {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.stickman {
+	width: 75px;
+	height: 100px;
+}
+
+
+/*ID's*/
+#left, #right {
+	width: 100px;
+}
+
+#left {
+	text-align: right;
+}
+
+/*image rotate*/
+
+.top-rotate {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	margin-bottom: 70px;
+}
+.right-rotate {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	margin-left: 12px;
+}
+.bottom-rotate {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	margin-top: 68px;
+}
+.left-rotate {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	margin-right: 12px;
+}

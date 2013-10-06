@@ -1,7 +1,12 @@
 /*index only styles*/
 
+.about {
+	width: 50%;
+	margin: 0 15px;
+	font-size: .8em;
+}
 .projects {
-	margin-left: 15px;
+	margin: 20px 15px;
 }
 
 .title {
