@@ -10,7 +10,6 @@
 		var imgStick = $("img.stickman");
 		var parentAdd = imgStick.closest(".here");
 		if ($(this)[0] !== parentAdd[0]) {
-			console.log("update");
 			imgStick.remove();
 			parentAdd.text("Go Here");
 

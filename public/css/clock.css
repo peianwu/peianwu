@@ -1,0 +1,19 @@
+.site-wrapper {
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+
+.timebox {
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.time {
+	font-size: 7em;
+}
+
+.timebox, .timelabel, .time {
+	margin: 0 auto;
+}
