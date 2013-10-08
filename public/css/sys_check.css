@@ -1,0 +1,10 @@
+body {
+	background-color: #8abad8;
+}
+
+.vert {
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	-flex-direction: column;
+}
+

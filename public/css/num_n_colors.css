@@ -3,6 +3,7 @@ li {
 }
 .num-grid {
 	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	margin: 30px auto;
 	width: 60%;
@@ -11,29 +12,22 @@ li {
 .grid-row, 
 .grid-cell {
 	-webkit-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 }
 
 .grid-cell {
 	display: -webkit-flex;
+	display: -ms-flex;
 	display: flex;
 	-webkit-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 	border: 1px solid #000;
 	text-align: center;
 	font-size: 4em;
-}
-
-.color-one {
-}
-
-.color-two {
-
-}
-
-.color-three {
-
 }

@@ -1,16 +1,20 @@
 .site-wrapper {
 	-webkit-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
 .box {
 	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	/*-webkit-justify-content: center;
 	justify-content: center;*/
 	-webkit-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 
 	width: 90%;
@@ -19,6 +23,7 @@
 
 .row1, .row2, .row3 {
 	-webkit-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	-webkit-flex: 1;
 	flex: 1;
@@ -50,20 +55,24 @@
 .top-rotate {
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
 	margin-bottom: 70px;
 }
 .right-rotate {
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
 	margin-left: 12px;
 }
 .bottom-rotate {
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
 	margin-top: 68px;
 }
 .left-rotate {
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
 	margin-right: 12px;
 }

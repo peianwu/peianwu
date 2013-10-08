@@ -6,6 +6,7 @@ include generic styling elements*/
 
 .container {
 	display: -webkit-flex;
+	display: -ms-flex;
 	display: flex;
 }
 
@@ -15,8 +16,10 @@ include generic styling elements*/
 
 body {
 	-webkit-justify-content: center;
+	-ms-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: stretch;
+	-ms-align-items: stretch;
 	align-items: stretch;
 	margin: 0;
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;

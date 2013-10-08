@@ -2,6 +2,7 @@
 
 .break {
 	-webkit-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 	margin-top: 5px;
 	height: 1px;
@@ -10,6 +11,7 @@
 
 .entry {
 	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	margin-top: 20px;
 }
