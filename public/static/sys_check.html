@@ -5,19 +5,20 @@
 		<title>day 5 | system check</title>
 		<link rel="stylesheet" href="../css/site_general.css">
 		<link rel="stylesheet" href="../css/sys_check.css">
-		<scirpt src="js/googleanalytics.js"></script>
+		<script src="../js/lib/jquery-1.10.2.min.js"></script>
+		<scirpt src="../js/googleanalytics.js"></script>
 	</head>
 	<body class="container">
 
-		<div class="site-wrapper">
-			<div class="sys-msg"></div>
-			<div class="os-imgs">
-				<div id="ms" class="logo"></div>
-				<div id="mac" class="logo"></div>
-				<div id="linux" class="logo"></div>
+		<div class="site-wrapper container vert">
+			<div class="sys-msg">YOUR OPERATING SYSTEM IS...</div>
+			<div class="os-imgs container">
+				<img src="../assets/img/day5/win_logo_bw_blur.png" id="ms" class="logo">
+				<img src="../assets/img/day5/mac_logo_bw_blur.png" id="mac" class="logo">
+				<img src="../assets/img/day5/linux_logo_bw_blur.png" id="linux" class="logo">
 			</div>
-			<div class="unknown"></div>
+			<div class="os"></div>
 		</div>
-
+		<script src="../js/sys_check.js"></script>
 	</body>
 </html>

@@ -5,6 +5,35 @@ body {
 .vert {
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
-	-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
 }
 
+.sys-msg {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.75em;
+	margin-bottom: 30px;
+	color: #000;
+	text-align: center;
+}
+
+.os-imgs {
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 200px;
+	height: 200px;
+}
+
+.os {
+	height: 1.2em;
+	margin-top: 50px;
+	font-size: 1.2em;
+	color: #515151;
+	text-align: center;
+}
