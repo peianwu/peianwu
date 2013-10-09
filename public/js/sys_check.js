@@ -10,7 +10,7 @@
 	function getOS() {
 		if (navigator.appVersion.indexOf("Win")!=-1) {
 			$("#ms").attr("src","../assets/img/day5/win_logo_color.png");
-			$(".os").text("indows! Just like the everyone else.");
+			$(".os").text("Windows! Just like everyone else.");
 		} else
 		if (navigator.appVersion.indexOf("Mac")!=-1) {
 			$("#mac").attr("src","../assets/img/day5/mac_logo.png");
