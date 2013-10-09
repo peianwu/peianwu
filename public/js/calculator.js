@@ -41,7 +41,9 @@
 		var onDisplay = $(".output").text();
 		console.log(onDisplay);
 
-		if (mathString === "0" && !isNaN(+idVal)) {
+		if (idVal === "00" && (mathString === "0" || (mathString.slice(-1) !== "." && isNaN(+mathString.slice(-1))))) {
+			// ignore
+		} else if (mathString === "0" && !isNaN(+idVal)) {
 			mathString = idVal;
 		} else if (isNaN(+idVal) && isNaN(+mathString.slice(-1))) {
 			mathString = mathString.substring(0,mathString.length-1) + idVal;
