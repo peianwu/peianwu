@@ -98,4 +98,34 @@
 		clearNext = true;
 	});
 
+	$("div").on("mouseenter", ".button", function() {
+		event.stopPropagation();
+		$(this).addClass("hover");
+	});
+
+	$("div").on("mouseleave", ".button", function() {
+		event.stopPropagation();
+		$(this).removeClass("hover");
+	});
+
+	$("div").on("mouseenter","#clear", function() {
+		event.stopPropagation();
+		$(this).addClass("hover");
+	});
+
+	$("div").on("mouseleave","#clear", function() {
+		event.stopPropagation();
+		$(this).removeClass("hover");
+	});
+
+	$("div").on("mouseenter","#answer", function() {
+		event.stopPropagation();
+		$(this).addClass("hover");
+	});
+
+	$("div").on("mouseleave","#answer", function() {
+		event.stopPropagation();
+		$(this).removeClass("hover");
+	});
+
 })();
