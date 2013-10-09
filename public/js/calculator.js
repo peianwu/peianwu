@@ -33,7 +33,7 @@
 	// true if last command was non-numeric
 	// false if last command was a number
 	var wasOperator = false;
-	var mathString = "";
+	var mathString = "0";
 
 	$("div").on("click", ".button", function() {
 		event.stopPropagation();
@@ -41,51 +41,23 @@
 		var onDisplay = $(".output").text();
 		console.log(onDisplay);
 
-		if (clearNext === false && typeof (+idVal) === "number") {
-			if (onDisplay === "0") {
-				$(".output").text(idVal);
-				mathString = mathString + idVal;
-			} else {
-				$(".output").text(onDisplay + idVal);
-				mathString = mathString + idVal;
-			}
-		} else if (clearNext === false && typeof (+idVal) !== "number") {
-			// don't update display output
-			if (idVal === "." && mathString.length === 0) {
-				mathString = idVal;
-				$(".output").text(idVal);
-				wasOperator = false;
-			} else if (wasOperator === true) {
-				mathString = mathString.length === 0 ? "" : mathString.substring(0, mathString.length - 1) + idVal;
-				wasOperator = true;
-			} else {
-				mathString = mathString + idVal;
-				wasOperator = true;
-			}
-		
-		} else if (clearNext === true && typeof (+idVal) === "number") {
+		if (mathString === "0" && !isNaN(+idVal)) {
+			mathString = idVal;
+		} else if (isNaN(+idVal) && isNaN(+mathString.slice(-1))) {
+			mathString = mathString.substring(0,mathString.length-1) + idVal;
+		} else if ((mathString === "0") && (idVal === ".")) {
+			mathString = idVal;
+		} else {
 			mathString = mathString + idVal;
-			$(".output").text(idVal);
-			clearNext = false;
-			wasOperator = false;
-		} else if (clearNext === true && typeof (+idVal) !== "number") {
-			if (idVal === "." && mathString.length === 0) {
-				mathString = idVal;
-				$(".output").text(idVal);
-				wasOperator = false;
-				clearNext = false;
-			} else {
-				mathString = mathString.length === 0 ? "" : mathString.substring(0, mathString.length - 1) + idVal;
-				wasOperator = true;
-			}
 		}
+
+		$(".output").text(mathString);
+		
 	});
 
 	$("div").on("click", "#clear", function() {
 		event.stopPropagation();
-		mathString = "";
-		clearNext = false;
-		wasOperator = false;
+		mathString = "0";
 		$(".output").text("0");
 	});
 
@@ -93,9 +65,7 @@
 		event.stopPropagation();
 		var ans = eval(mathString);
 		$(".output").text(ans);
-		mathString = "";
-		wasOperator = false;
-		clearNext = true;
+		mathString = "0";
 	});
 
 	$("div").on("mouseenter", ".button", function() {
