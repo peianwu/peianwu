@@ -3,7 +3,18 @@
 	windowHeight = function() {
 		$(".site-wrapper").css("height", window.innerHeight);
 	};
-	window.onload = windowHeight();
+	window.onload = function() {
+		windowHeight();
+		$("#bg-color").val("#3ca938");
+		$("#font-color").val("#000")
+		$("body").css("background-color", "#3ca938");
+		$("#title-font").val("Palatino");
+		$("#sample-header").css("font-family", "Palatino");
+		$("#body-font").val("Candara");
+		$("#sample-body").css("font-family", "Candara");
+
+	};
+
 	$(window).resize(function() {
 		windowHeight();
 	});

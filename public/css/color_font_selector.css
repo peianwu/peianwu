@@ -1,12 +1,17 @@
 
 input {
-	border: 1px dotted orange;
 	background-color: #fff;
-	width: 50px;
+	border: 1px dotted orange;
+	margin-right: 15px;
+	width: 75px;
 }
 
 h2 {
 	margin-bottom: 5px;
+}
+
+span {
+	margin-right: 5px;
 }
 
 .site-wrapper {
@@ -34,6 +39,7 @@ h2 {
 	-ms-justify-content: center;
 	justify-content: center;
 }
+
 
 .color, .font {
 	font-size: .8em;
