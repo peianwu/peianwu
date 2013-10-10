@@ -1,0 +1,51 @@
+
+input {
+	border: 1px dotted orange;
+	background-color: #fff;
+	width: 50px;
+}
+
+h2 {
+	margin-bottom: 5px;
+}
+
+.site-wrapper {
+	width: 80%;
+}
+
+.left {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.right {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+
+.color, .font {
+	font-size: .8em;
+}
+
+.header {
+	font-size: 3em;
+}
+
+.body {
+	margin-top: 10px;
+	margin-left: 15px;
+	font-size: 1.5em;
+}
+
