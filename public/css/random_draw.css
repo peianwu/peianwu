@@ -1,0 +1,40 @@
+html {
+	height: 100%;
+	position: relative;
+}
+
+body {
+	background-color: #276675;
+	color: #fff;
+	min-height: 100%;
+	position: relative;
+}
+
+.full-wrapper {
+	width: 100%;
+}
+
+.instruction {
+	display: block;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 2em;
+	margin: 10px auto;
+	text-align: center;
+	width: 70%;
+}
+
+.size {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+}
+
+.back {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	color: #fff;
+	display: block;
+	font-size: 1em;
+	margin: 0 auto;
+}
