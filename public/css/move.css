@@ -1,0 +1,28 @@
+.full-wrap {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	background-color: steelblue;
+}
+
+.target {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	position: absolute;
+	font-size: 1em;
+	background-color: #fff;
+	padding: 5px;
+}
+
+.orange {
+	border: 2px solid orange;
+}
+
+.red {
+	border: 2px solid red;
+}
+
+.black {
+	border: 2px solid #000;
+}
